@@ -1,0 +1,180 @@
+.container {
+  width: 32rem;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-all;
+  white-space: pre-wrap;
+}
+
+.para {
+  width: 30rem;
+}
+
+.code-block {
+  width: 55%;
+ // height: 300px; /* Adjust the desired height here */
+  margin: 0 auto;
+  //min-height: 300px;
+}
+
+.chatcontainer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  border: solid 1px rgb(237, 235, 235);
+  border-radius: 20px;
+  width: 27rem;
+  height: 90vh;
+  padding: 10px;
+  box-shadow: 1px 1px 10px 1px #fbf5f5;
+  display: flex;
+  font-family: 'Times New Roman', Times, serif;
+  margin: 10px;  
+  background-color: white;
+}
+
+.chatbox {
+  position: absolute; /* Change position to relative */
+  margin-top: 4.5rem;
+  width: 95%;
+  height: 74vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  //background-color: #eae5e12c;  
+  // padding: 20px 10px 20px 10px;
+}
+
+.inputbox {
+  position: absolute;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  bottom: 0;
+  width: calc(95% - 20px); /* Calculate width based on chatbox width */
+}
+
+.input {
+  border-radius: 10px;
+  width: 100%;
+  border: solid 1px rgb(235, 235, 235);
+  padding: 10px;
+}
+
+.headbox {
+  position: absolute;
+  // z-index: 1;
+  background-color: rgb(242, 141, 83);
+  padding: 10px;
+  top: 0px;
+  left: 0;
+  border-radius: 20px 20px 5px 5px;
+  width: 96%;
+  // z-index: 10px;
+}
+
+.avatar {
+  position: absolute; 
+  z-index: 10;
+  height: 100%;
+  width: 16rem;
+  margin-top: -3.9rem;
+}
+
+.headbox p {  
+    font-size: 15px;
+    font-style: italic;
+    text-align: right;
+    font-weight: bolder;
+    color: white;
+}
+
+.chatcontain {
+  display: flex;
+}
+
+.user {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  text-align: right;
+  margin-left: auto;  
+}
+
+.parauser {  
+  // margin-top: 10rem;
+  border-radius: 4px;
+  padding: 10px;
+  background-color: #f793543e;
+}
+
+.parai {  
+  //position: absolute;
+  border-radius: 4px;
+  background-color: #dcd8d845;
+  padding: 15px 10px 15px 10px;
+  flex-shrink: 0;
+  // overflow-wrap: break-word;
+  // max-width: 100%;
+ 
+}
+
+.ai{
+  // margin-bottom: 3rem;
+  //position: absolute;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: left;
+  margin-right: auto;  
+}
+
+.iconbox{
+  cursor: pointer;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.icon {
+  height: 50px;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 40px;
+  cursor: pointer;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: white;
+  cursor: pointer;
+  border-radius: 40px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #e78936;
+  cursor: pointer;
+  border-radius: 40px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #ec9952;
+  cursor: pointer;
+  border-radius: 40px;
+}
+
+
+/* Media query for screens smaller than 768px (mobile devices) */
+@media (max-width: 767px) {
+  .chatcontainer {
+    width: 90%; /* Adjust the width for mobile devices */
+    height: 80vh; /* Adjust the height for mobile devices */
+  }
+  .chatbox {
+    overflow: hidden;
+  }
+}
